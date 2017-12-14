@@ -152,6 +152,7 @@ a{
 #tour figure .tour_title{
 	height: 45px;
 	overflow: hidden;
+	overflow-y: scroll;
 }
 #tour figure .tour_title strong{
 	color: red;
@@ -243,6 +244,9 @@ a{
 	#tour figure{
 		width:32%;
 	}
+	.duan1{
+		display: none;
+	}
 }
 @media (min-width:992px) and (max-width:1199px){
 	#adver .center{
@@ -250,10 +254,13 @@ a{
 		margin: 20px 0px 0px -25%;
 	}
 	#header .center .link ul li{
-		width:17%
+		width:13%
 	}
 	#tour figure{
 		width:32%;
+	}
+	.duan1{
+		display: none;
 	}
 }
 /*PAD*/
@@ -262,21 +269,24 @@ a{
 		width: 60%;
 		margin: 20px 0px 0px -25%;
 	}
-	#adver .search,#adver .button{
+	/*#adver .search,#adver .button{
 		font-size: 26px;
-	}
+	}*/
 	#tour .center h2{
 		font-size: 35px;
 	}
 	#header .center .link{
-		width: 100%;
-		line-height:45px;
+		width:70%;
+		line-height:70px;
 	}
 	#header .center .link ul li{
-		width:11.5%
+		width:8.5%
 	}
 	#tour figure{
 		width:48.3%;
+	}
+	.duan1{
+		display: none;
 	}
 	
 }
@@ -289,20 +299,20 @@ a{
 		display: none;
 	}
 	#header .center .link{
-		width: 100%;
+		width:100%;
 		line-height:45px;
 	}
 	#header .center .link ul li{
-		width:11.5%
+		width:8%
 	}
 	#adver .center{
 		width: 70%;
-		height: 50px;
+		height: 55px;
 		margin: -10px 0px 0px -35%;
 	}
 	#adver .search,#adver .button{
 		height: 45px;
-		font-size: 22px;
+		font-size: 20px;
 	}
 	#tour .center h2{
 		font-size: 30px;
@@ -311,8 +321,18 @@ a{
 		font-size: 16px;
 	}
 	#tour figure{
-		width:48.3%;
+		width:47%;
 	}	
+		.duan1{
+		width: 100%;
+		height:30px;
+		text-align: center;
+		line-height: 30px;
+		background: deepskyblue;
+	}
+	.duan1 ul li{
+		display: inline-block;
+	}
 }
 @media(max-width:479px){
 	#header,#header .center,#header .link{
@@ -353,5 +373,65 @@ a{
 		border: 1px solid red;
 		display: block;
 		font-size: 13px;
+	}
+	.duan1{
+		width: 100%;
+		height:30px;
+		text-align: center;
+		line-height: 30px;
+		background: deepskyblue;
+	}
+	.duan1 ul li{
+		display: inline-block;
+	}
+}
+@media (min-width:200px) and (max-width:430px)
+{
+	#header,#header .center,#header .link{
+		height: 45px;
+	}
+	#header .logo,.sm-hidden,.xs-hidden,.duan,#footer{
+		display: none;
+	}
+	#tour .center h2{
+		font-size: 20px;
+	}
+	#tour .center p{
+		font-size: 10px;
+	}
+	#tour figure{
+		width: 100%;
+	}
+	#header .center .link{
+		width: 100%;
+		line-height:45px;
+	}
+	#header .center .link ul li{
+		width:5%
+	}
+	#adver{
+		padding: 45px 0px 0px 0px;
+	}
+	#adver .center{
+		width: 80%;
+		height:48px;
+		margin: 5px 0px 0px -40%;
+	}
+	#adver .center .search{
+		width: 60%;
+	}
+	#adver .center .search,#adver .center .button{
+		height: 30px;
+		font-size: 8px;
+	}
+	.duan1{
+		width: 100%;
+		height:30px;
+		text-align: center;
+		line-height: 30px;
+		background: deepskyblue;
+	}
+	.duan1 ul li{
+		display: inline-block;
 	}
 }
